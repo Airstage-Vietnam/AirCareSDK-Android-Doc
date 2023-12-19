@@ -53,6 +53,8 @@ Health Connect assigns UIDs to newly inserted data objects. This makes it possib
 - **Research Study ID:** Unique identifier for specific research studies or clinical trials.
 - **Healthcare Provider NPI (National Provider Identifier):** Unique identifier for healthcare providers used in the United States.
 
+  [Back to table of contents](#table-of-contents)
+
 ### Activity
 
 This captures any activity that a user does. It can include health and fitness activities like running, swimming, and sleep.
