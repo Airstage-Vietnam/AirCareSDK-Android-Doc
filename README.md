@@ -53,7 +53,7 @@ Health Connect assigns UIDs to newly inserted data objects. This makes it possib
 - **Research Study ID:** Unique identifier for specific research studies or clinical trials.
 - **Healthcare Provider NPI (National Provider Identifier):** Unique identifier for healthcare providers used in the United States.
 
-  [Back to table of contents](#table-of-contents)
+[Back to table of contents](#table-of-contents)
 
 ### Activity
 
@@ -91,6 +91,8 @@ This captures common data related to the body. It includes capturing a user's we
 - **Leg Length:** Numeric data type representing the length of the legs.
 - **Foot Size:** Numeric data type indicating the size of the feet, often in European or US shoe sizes.
 
+[Back to table of contents](#table-of-contents)
+
 ### Cycle tracking
 
 This captures menstrual cycles and related data points, such as the binary result of an ovulation test.
@@ -109,6 +111,8 @@ This captures menstrual cycles and related data points, such as the binary resul
 - **Contraceptive Use:** Categorical data type indicating the use of contraceptives or birth control methods.
 - **Mood and Energy Levels:** Categorical or numeric data type representing mood and energy variations throughout the cycle.
 - **Physical Activity Levels:** Categorical or numeric data type indicating the level of physical activity during the menstrual cycle.
+
+[Back to table of contents](#table-of-contents)
 
 ### Nutrition
 
@@ -135,6 +139,8 @@ This captures hydration and nutrition data types. The former represents how much
 - **Nutritional Goals:** Numeric data type representing personalized nutritional goals (e.g., daily calorie intake, protein target).
 - **Special Diets:** Categorical data type indicating adherence to special diets (e.g., vegetarian, vegan, gluten-free).
 - **Food Preferences:** Text or categorical data type indicating personal food preferences or restrictions.
+
+[Back to table of contents](#table-of-contents)
 
 ### Sleep
 
@@ -163,6 +169,8 @@ This captures interval data related to a user's length and type of sleep.
 - **Dreams/Nightmares:** Text or categorical data type indicating the presence of dreams or nightmares during sleep.
 - **Waking Mood:** Categorical or numeric data type representing the individual's mood upon waking.
 - **Sleep Goals:** Numeric data type representing personalized goals for sleep duration or quality.
+
+[Back to table of contents](#table-of-contents)
 
 ### Vitals
 
@@ -201,6 +209,8 @@ This captures essential information about the user's general health. It includes
 - **Immunization Records:** Text or categorical data type tracking vaccination history.
 - **Physical Activity Level:** Categorical or numeric data type indicating the level of physical activity.
 
+[Back to table of contents](#table-of-contents)
+
 ## How to use SDK
 
 ### Import android library into your application
@@ -226,6 +236,9 @@ Now, your application can import the Android library package and start using it.
 ```
 import com.example.aircare_sdk.StepCountAggregator
 ```
+
+[Back to table of contents](#table-of-contents)
+
 
 ## Health Connect with your application
 
@@ -424,6 +437,8 @@ Try to run and your application, you will see like this:
 
 ![img](assets/check-permission.png)
 
+[Back to table of contents](#table-of-contents)
+
 ## Features list
 
 ### Step Count Aggregator
@@ -518,6 +533,7 @@ fun AggregateStepsCard(aircareManager: AircareManager) {
     }
 }
 ```
+[Back to table of contents](#table-of-contents)
 
 ### Heart Rate Aggregator
 
@@ -617,6 +633,7 @@ fun AggregateHeartRateCard(aircareManager: AircareManager, cardIndex: Int) {
     }
 }
 ```
+[Back to table of contents](#table-of-contents)
 
 ### Distance Total Aggregator
 
@@ -716,6 +733,7 @@ fun AggregateDistanceCard(aircareManager: AircareManager) {
     }
 }
 ```
+[Back to table of contents](#table-of-contents)
 
 ### Sleep Session Aggregator
 
@@ -816,6 +834,7 @@ fun AggregateSleepCard(aircareManager: AircareManager) {
     }
 }
 ```
+[Back to table of contents](#table-of-contents)
 
 ### Active Calories Burned Aggregator
 
@@ -913,3 +932,4 @@ fun AggregateCaloriesCard(aircareManager: AircareManager) {
     }
 }
 ```
+[Back to table of contents](#table-of-contents)
