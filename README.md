@@ -25,10 +25,11 @@ The Aircare Android SDK is used to collect user health data through Health Conne
   - [Distance Total Aggregator](#distance-total-aggregator)
   - [Sleep Session Aggregator](#sleep-session-aggregator)
   - [Active Calories Burned Aggregator](#active-calories-burned-aggregator)
-    
+
 ## Data Types
 
 ### Unique identifier
+
 Health Connect assigns UIDs to newly inserted data objects. This makes it possible to identify data objects and distinguish them from others, especially when used in read, update, or delete requests.
 
 - **Patient ID:** Alphanumeric data type assigned to each patient, serving as a unique identifier for their health records.
@@ -53,6 +54,7 @@ Health Connect assigns UIDs to newly inserted data objects. This makes it possib
 - **Healthcare Provider NPI (National Provider Identifier):** Unique identifier for healthcare providers used in the United States.
 
 ### Activity
+
 This captures any activity that a user does. It can include health and fitness activities like running, swimming, and sleep.
 
 - **Steps Count:** Numeric data type representing the number of steps taken.
@@ -67,6 +69,7 @@ This captures any activity that a user does. It can include health and fitness a
 - **Weather Conditions:** Categorical data type describing the weather conditions during the activity.
 
 ### Body measurements
+
 This captures common data related to the body. It includes capturing a user's weight, a user's basal metabolic rate, among other data types.
 
 - **Height:** Numeric data type, often represented in centimeters or inches.
@@ -87,6 +90,7 @@ This captures common data related to the body. It includes capturing a user's we
 - **Foot Size:** Numeric data type indicating the size of the feet, often in European or US shoe sizes.
 
 ### Cycle tracking
+
 This captures menstrual cycles and related data points, such as the binary result of an ovulation test.
 
 - **Menstrual Cycle Start Date:** Date data type representing the first day of the menstrual cycle.
@@ -105,19 +109,20 @@ This captures menstrual cycles and related data points, such as the binary resul
 - **Physical Activity Levels:** Categorical or numeric data type indicating the level of physical activity during the menstrual cycle.
 
 ### Nutrition
+
 This captures hydration and nutrition data types. The former represents how much water a user drank in a single drink. The latter includes many optional fields, such as calories, sugar and magnesium.
 
 - **Food Item:** Text data type representing the name or description of a specific food item.
 - **Portion Size:** Numeric data type indicating the size or quantity of a food portion, often measured in grams or ounces.
 - **Calories:** Numeric data type representing the energy content of a food item.
 - **Macronutrients:**
-    - **Carbohydrates:** Numeric data type representing the amount of carbohydrates in grams.
-    - **Proteins:** Numeric data type representing the amount of proteins in grams.
-    - **Fats:** Numeric data type representing the amount of fats in grams.
-    - **Dietary Fiber:** Numeric data type representing the amount of dietary fiber in grams.
+  - **Carbohydrates:** Numeric data type representing the amount of carbohydrates in grams.
+  - **Proteins:** Numeric data type representing the amount of proteins in grams.
+  - **Fats:** Numeric data type representing the amount of fats in grams.
+  - **Dietary Fiber:** Numeric data type representing the amount of dietary fiber in grams.
 - **Micronutrients:**
-    - **Vitamins:** Text or numeric data type for tracking various vitamins (e.g., Vitamin A, Vitamin C).
-    - **Minerals:** Text or numeric data type for tracking minerals (e.g., calcium, iron).
+  - **Vitamins:** Text or numeric data type for tracking various vitamins (e.g., Vitamin A, Vitamin C).
+  - **Minerals:** Text or numeric data type for tracking minerals (e.g., calcium, iron).
 - **Serving Time:** Date and time data type indicating when a particular food item was consumed.
 - **Meal Type:** Categorical data type indicating the type of meal (e.g., breakfast, lunch, dinner, snacks).
 - **Meal Composition:** Text or categorical data type describing the composition of a meal (e.g., balanced, high-protein).
@@ -130,6 +135,7 @@ This captures hydration and nutrition data types. The former represents how much
 - **Food Preferences:** Text or categorical data type indicating personal food preferences or restrictions.
 
 ### Sleep
+
 This captures interval data related to a user's length and type of sleep.
 
 - **Sleep Start Time:** Date and time data type indicating when the individual begins sleeping.
@@ -138,18 +144,18 @@ This captures interval data related to a user's length and type of sleep.
 - **Sleep Efficiency:** Numeric data type indicating the percentage of time spent asleep while in bed.
 - **Sleep Quality:** Categorical or numeric data type representing subjective or objective measures of sleep quality.
 - **Sleep Architecture:**
-    - **Light Sleep Duration:** Numeric data type representing the duration of light sleep in hours.
-    - **Deep Sleep Duration:** Numeric data type representing the duration of deep sleep in hours.
-    - **REM Sleep Duration:** Numeric data type representing the duration of rapid eye movement (REM) sleep in hours.
+  - **Light Sleep Duration:** Numeric data type representing the duration of light sleep in hours.
+  - **Deep Sleep Duration:** Numeric data type representing the duration of deep sleep in hours.
+  - **REM Sleep Duration:** Numeric data type representing the duration of rapid eye movement (REM) sleep in hours.
 - **Sleep Cycles:** Numeric data type representing the number of complete sleep cycles experienced.
 - **Awake Episodes:** Numeric data type representing the number of times the individual wakes up during the night.
 - **Sleep Latency:** Numeric data type representing the time it takes for the individual to fall asleep after going to bed.
 - **Nap Duration:** Numeric data type representing the duration of any daytime naps.
 - **Snoring Intensity:** Categorical or numeric data type indicating the intensity of snoring during sleep.
 - **Sleep Environment:**
-    - **Room Temperature:** Numeric data type representing the temperature of the sleep environment.
-    - **Ambient Light Level:** Categorical or numeric data type representing the level of ambient light in the sleep environment.
-    - **Noise Level:** Categorical or numeric data type representing the noise level in the sleep environment.
+  - **Room Temperature:** Numeric data type representing the temperature of the sleep environment.
+  - **Ambient Light Level:** Categorical or numeric data type representing the level of ambient light in the sleep environment.
+  - **Noise Level:** Categorical or numeric data type representing the noise level in the sleep environment.
 - **Sleep Patterns:** Text or categorical data type describing regular sleep patterns or irregularities.
 - **Sleep Medications:** Categorical data type indicating the use of sleep aids or medications.
 - **Dreams/Nightmares:** Text or categorical data type indicating the presence of dreams or nightmares during sleep.
@@ -157,29 +163,30 @@ This captures interval data related to a user's length and type of sleep.
 - **Sleep Goals:** Numeric data type representing personalized goals for sleep duration or quality.
 
 ### Vitals
+
 This captures essential information about the user's general health. It includes data such as blood glucose, body temperature and blood oxygen saturation.
 
 - **Blood Pressure:**
-    - **Systolic Pressure:** Numeric data type representing the systolic blood pressure reading.
-    - **Diastolic Pressure:** Numeric data type representing the diastolic blood pressure reading.
-    - **Blood Pressure** Category: Categorical data type indicating blood pressure status (e.g., normal, hypertensive).
+  - **Systolic Pressure:** Numeric data type representing the systolic blood pressure reading.
+  - **Diastolic Pressure:** Numeric data type representing the diastolic blood pressure reading.
+  - **Blood Pressure** Category: Categorical data type indicating blood pressure status (e.g., normal, hypertensive).
 - **Heart Rate/Pulse:**
-    - **Resting Heart Rate:** Numeric data type representing the number of heartbeats per minute at rest.
-    - **Maximum Heart Rate:** Numeric data type representing the highest heart rate achieved during activity.
-    - **Respiratory Rate:** Numeric data type representing the number of breaths per minute.
+  - **Resting Heart Rate:** Numeric data type representing the number of heartbeats per minute at rest.
+  - **Maximum Heart Rate:** Numeric data type representing the highest heart rate achieved during activity.
+  - **Respiratory Rate:** Numeric data type representing the number of breaths per minute.
 - **Temperature:**
-    - **Body Temperature:** Numeric data type representing the body's temperature, often in Celsius or Fahrenheit.
-    - **Temperature Location:** Categorical data type indicating where the temperature was measured (e.g., oral, ear, forehead).
+  - **Body Temperature:** Numeric data type representing the body's temperature, often in Celsius or Fahrenheit.
+  - **Temperature Location:** Categorical data type indicating where the temperature was measured (e.g., oral, ear, forehead).
 - **Oxygen Saturation:** Numeric data type representing the percentage of oxygen saturation in the blood.
 - **Height:** Numeric data type representing the individual's height, often in centimeters or inches.
 - **Weight:**
-    - **Body Weight:** Numeric data type representing the individual's weight, often in kilograms or pounds.
-    - **Weight Category:** Categorical data type indicating weight status (e.g., underweight, normal, overweight, obese).
+  - **Body Weight:** Numeric data type representing the individual's weight, often in kilograms or pounds.
+  - **Weight Category:** Categorical data type indicating weight status (e.g., underweight, normal, overweight, obese).
 - **Body Mass Index (BMI):** Numeric data type calculated based on height and weight.
 - **Pain Level:** Numeric data type representing the intensity of pain on a scale.
 - **Blood Sugar Level:**
-    - **Fasting Blood Sugar:** Numeric data type representing blood glucose levels after a period of fasting.
-    - **Postprandial Blood Sugar:** Numeric data type representing blood glucose levels after meals.
+  - **Fasting Blood Sugar:** Numeric data type representing blood glucose levels after a period of fasting.
+  - **Postprandial Blood Sugar:** Numeric data type representing blood glucose levels after meals.
 - **Cholesterol Levels:**
 - **Total Cholesterol:** Numeric data type representing the total cholesterol level.
 - **LDL (Low-Density Lipoprotein):** Numeric data type representing LDL cholesterol.
@@ -200,17 +207,20 @@ This captures essential information about the user's general health. It includes
 Dowload .aar file from my leader sent
 
 **Add the dependency**
+
 ```
 dependencies {
     ...
        implementation(files("your_path/aircare-sdk.aar"))
 }
 ```
+
 **Note:** your_path is the path .aar file saved
 
-Now, your application can import the Android library package and start using it. 
+Now, your application can import the Android library package and start using it.
 
 **Example:**
+
 ```
 import com.example.aircare_sdk.StepCountAggregator
 ```
@@ -246,8 +256,8 @@ Health Connect uses the standard Android permission declaration format. Assign p
     <uses-permission android:name="android.permission.health.READ_STEPS" />
     <uses-permission android:name="android.permission.health.READ_SLEEP" />
     <uses-permission android:name="android.permission.health.READ_DISTANCE" />
-    <uses-permission android:name="android.permission.health.READ_ACTIVE_CALORIES_BURNED" /> 
-  
+    <uses-permission android:name="android.permission.health.READ_ACTIVE_CALORIES_BURNED" />
+
   <application>
   ...
   </application>
@@ -262,7 +272,7 @@ Your Android manifest needs to have an Activity that displays your app's privacy
 ...
 <application>
   ...
-  
+ 
   <activity-alias
      ...
     // Permission handling for Android 14
@@ -284,13 +294,13 @@ To get a client instance, declare the Health Connect package name in your Androi
 ```
 <application> ... </application>
 ...
-//Check if Health Connect is installed 
+//Check if Health Connect is installed
  <queries>
         <package android:name="com.google.android.apps.healthdata" />
         // The app needs to handle this intent and display an appropriate privacy policyexplaining how the user's data will be used and handled.
 
         //This intent is sent to the app when the user clicks on the "privacy policy" linkin the Health Connect permissions dialog.
-        
+
         <intent>
             <action android:name="androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE" />
         </intent>
@@ -313,10 +323,10 @@ import com.example.aircare_sdk.data.AircareManager
 
 /**
  * Coroutine scope for managing and controlling coroutines with a single-threaded dispatcher.
- * 
+ *
  * This `CoroutineScope` is created with a new single-threaded dispatcher named "health,"
  * ensuring that coroutines launched within this scope will execute sequentially on a dedicated thread.
- * 
+ *
  * Use this scope for coroutine operations that require sequential execution or to avoid
  * concurrent access issues, such as when working with shared resources that are not thread-safe.
  */
@@ -331,7 +341,7 @@ import com.example.aircare_sdk.data.AircareManager
             HealthPermission.getReadPermission(SleepSessionRecord::class),
             HealthPermission.getReadPermission(ActiveCaloriesBurnedRecord::class),
         )
-    
+
      // Create the permissions launcher
     val requestPermissionActivityContract = PermissionController.createRequestPermissionResultContract()
 
@@ -349,7 +359,7 @@ import com.example.aircare_sdk.data.AircareManager
             // Lack of required permissions
         }
     }
-    
+
     /**
      * suspend fun checkPermissionsAndRun a task using the provided HealthConnectClient.
      *
@@ -364,8 +374,8 @@ import com.example.aircare_sdk.data.AircareManager
             requestPermissions.launch(PERMISSIONS)
         }
     }
-    
-    
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         /**
@@ -376,7 +386,7 @@ import com.example.aircare_sdk.data.AircareManager
          * @return An instance of AircareManager configured for the specified context.
          */
         val aircareManager = AircareManager(this)
-        
+
         /**
          * Launches a coroutine within the 'health' coroutine scope to asynchronously check permissions
          * and execute a task using the provided HealthConnectClient.
@@ -393,7 +403,7 @@ import com.example.aircare_sdk.data.AircareManager
         scope.launch {
             checkPermissionsAndRun(aircareManager.healthConnectClient)
         }
-        
+
         setContent {
             MyApplicationTheme {
                 // A surface container using the 'background' color from the theme
@@ -407,9 +417,13 @@ import com.example.aircare_sdk.data.AircareManager
         }
     }
 ```
+
 Try to run and your application, you will see like this:
 
+![img](assets/check-permission.png)
+
 ## Features list
+
 ### Step Count Aggregator
 
 Captures the number of steps taken since the last reading. Each step is only reported once so records shouldn't have overlapping time. The start time of each record should represent the start of the interval in which steps were taken.
@@ -437,6 +451,7 @@ stepAggregator.aggregate(aircareManager.healthConnectClient, startTime, endTime)
 ```
 
 **Example:**
+
 ```
 /**
  * A composable function to display a card aggregating step count data using the provided AircareManager.
@@ -507,6 +522,7 @@ fun AggregateStepsCard(aircareManager: AircareManager) {
 Record the user's average heart rate over a period of time
 
 **SDK will provide an function to get avg heart rate, max heart rate, min heart rate, number of heart rate measurements:**
+
 ```
 // Import necessary classes from the air care SDK
 import com.example.aircare_sdk.data.AircareManager
@@ -555,7 +571,7 @@ fun AggregateHeartRateCard(aircareManager: AircareManager, cardIndex: Int) {
         try {
             // Perform heart rate aggregation using AvgHeartRateAggregator
             val responseHeartRate = avgHeartRateAggregator.aggregate(aircareManager.healthConnectClient, startTime, endTime)
-            
+
             // Update the state with the aggregated heart rate value
             heartRateAvg = responseHeartRate.toString()
         } catch (e: Exception) {
@@ -585,7 +601,7 @@ fun AggregateHeartRateCard(aircareManager: AircareManager, cardIndex: Int) {
                 fontWeight = FontWeight.Bold,
                 fontSize = 20.sp
             )
-            
+
             // Spacer for vertical spacing
             Spacer(modifier = Modifier.height(8.dp))
 
