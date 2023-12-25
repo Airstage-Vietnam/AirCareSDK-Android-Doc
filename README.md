@@ -251,7 +251,7 @@ Add the Health Connect SDK dependency in your module-level **build.gradle** file
 ```
 dependencies {
   ...
-   implementation ("androidx.health.connect:connect-client:1.1.0-alpha06")
+   implementation ("androidx.health.connect:connect-client:1.1.0-alpha02")
   ...
 }
 ```
