@@ -251,7 +251,7 @@ Add the Health Connect SDK dependency in your module-level **build.gradle** file
 ```
 dependencies {
   ...
-   implementation ("androidx.health.connect:connect-client:1.1.0-alpha02")
+   implementation ("androidx.health.connect:connect-client:1.0.0-alpha11")
   ...
 }
 ```
@@ -296,6 +296,16 @@ Your Android manifest needs to have an Activity that displays your app's privacy
       <category android:name="android.intent.category.HEALTH_PERMISSIONS" />
     </intent-filter>
   </activity-alias>
+
+    // Permission handling for Android 13
+
+  <activity>
+   <intent-filter>
+        <action android:name="androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE" />
+      </intent-filter>
+  </activity>
+
+
   ...
 </application>
 ...
